@@ -28,13 +28,13 @@ export class gameScene extends Phaser.Scene {
     }
     update(time): void {
         if (keyA.isDown) {
-            player.setVelocity(-200, 0);
+            player.setVelocity(-200, Gravity);
         }
         else if (keyD.isDown) {
-            player.setVelocity(200, 0);
+            player.setVelocity(200, Gravity);
         }
         else if (keySPACE.isDown && JumpDelay === 0) {
-            player.setVelocity(0, -400);
+            player.setVelocity(0, -400 - Gravity);
             JumpDelay = 5;
         }
         else {
