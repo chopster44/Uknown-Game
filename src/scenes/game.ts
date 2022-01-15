@@ -39,6 +39,7 @@ export class gameScene extends Phaser.Scene {
         }
         else {
             player.setVelocity(0, Gravity);
+            //test
         }
 
         if (JumpDelay < 0) {
