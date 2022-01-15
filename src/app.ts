@@ -2,7 +2,7 @@ import "phaser";
 import { gameScene } from "./scenes/game";
 type GameConfig = Phaser.Types.Core.GameConfig
 const config: GameConfig = {
-    title: "Pong",
+    title: "Uknown",
     width: 800,
     height: 600,
     parent: "game",
